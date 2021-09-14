@@ -2,7 +2,7 @@ import java.util.*;
 class Strong 
 {
 
-    static int fact(int n)
+    static int fact(int n)//finding a factorial of the individual digits 
     {
       return (n==1 || n==0 ?1:n*fact(n-1));
 
@@ -19,7 +19,7 @@ class Strong
             rem=temp%10;
             if(rem>=0)
             {
-            Sum=Sum+fact(rem);
+            Sum=Sum+fact(rem);// summation of the factorial of individual digits 
             temp=temp/10;
             }
          }
@@ -35,8 +35,8 @@ class Strong
          Scanner sc =new Scanner(System.in);
          System.out.println("Enter a number");
          int Num=sc.nextInt();
-         Strong baby=new Strong();
-         boolean b=baby.Strong(Num);
+         Strong obj=new Strong();
+         boolean b=obj.Strong(Num);
          System.out.println(b);
          
 
